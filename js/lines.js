@@ -141,6 +141,9 @@ window.addEventListener('load', function() {
                 });
             });
             subTotal += dayTotal;
+            if (dayTotal > 0) {
+                leader = ['', 0]
+            }
             _.each(item, function(entry, key) {
                 dates.push(datum[0].rawDate);
                 if (dayTotal > 0) {

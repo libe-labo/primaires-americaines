@@ -83,7 +83,7 @@ window.addEventListener('load', function() {
             row.done = _.sum(_.mapValues(row.results, function(result) {
                 result.name = arguments[1];
                 return result.delegates;
-            })) === row.delegates;
+            })) > 0;
             row.results = _.sortByOrder(row.results, 'percent', 'desc');
             return row;
         });

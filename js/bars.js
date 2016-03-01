@@ -40,7 +40,7 @@ window.addEventListener('load', function() {
             } else if (layout === LAYOUT.VERTICAL) {
                 height = containerHeight;
                 xScale = d3.scale.ordinal().domain(_.pluck(data, 'name')).rangeRoundBands([0, width], 0.15, 0.15);
-                yScale = d3.scale.linear().domain([0, 100]).range([0, height]);
+                yScale = d3.scale.linear().domain([0, total]).range([0, height]);
             }
 
             // Get or create SVG tag
