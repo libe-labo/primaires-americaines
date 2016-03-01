@@ -3,7 +3,7 @@
 
 window.addEventListener('load', function() {
     var LAYOUT = { HORIZONTAL : 0 , VERTICAL : 1 };
-    var dropped = [ 'rand paul' ];
+    var dropped = [ 'rand paul' , 'jeb bush' ];
 
     var data = [],
         total = 0,
